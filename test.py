@@ -10,5 +10,5 @@ from atc_prediction import predict_atc_from_ingredients
 # print(result['similar_products_table'])
 
 # 사용 예시
-result = predict_atc_from_ingredients(["acetaminophen", "anhydrous caffeine"])
+result = predict_atc_from_ingredients(["acetaminophen"])
 print(result)

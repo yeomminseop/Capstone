@@ -80,10 +80,10 @@ print(filtered_medicine_info.head())
 print(filtered_medicine_info.info())
 
 # ATC 코드 단계별 분리
-filtered_medicine_info["atc_1"] = filtered_medicine_info["atc"].str[0]
-filtered_medicine_info["atc_2"] = filtered_medicine_info["atc"].str[:3]
-filtered_medicine_info["atc_3"] = filtered_medicine_info["atc"].str[:4]
-filtered_medicine_info["atc_4"] = filtered_medicine_info["atc"].str[:5]
+filtered_medicine_info["atc_1"] = filtered_medicine_info["atc"].str[0] #1단계
+filtered_medicine_info["atc_2"] = filtered_medicine_info["atc"].str[:3] #2단계
+filtered_medicine_info["atc_3"] = filtered_medicine_info["atc"].str[:4] #3단계
+filtered_medicine_info["atc_4"] = filtered_medicine_info["atc"].str[:5] #4단계
 
 # 전처리 완료된 데이터 저장(CSV)
 filtered_medicine_info.to_csv("Medicine/filtered_medicine_info.csv", index=False)

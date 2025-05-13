@@ -1,0 +1,115 @@
+ATC 그룹,Antecedents,Consequents,support,confidence,lift
+A11J,"choline tartrate, selenium in dried yeast",inositol,0.11,1.0,4.212
+A11J,"inositol, tocopherol acetate powder 50%",ursodeoxycholic acid,0.121,0.931,4.206
+A11J,choline tartrate,"inositol, pyridoxine hydrochloride",0.16,0.802,4.166
+A11J,"inositol, pyridoxine hydrochloride",choline tartrate,0.16,0.832,4.166
+A11J,inositol,"benfotiamine, choline tartrate",0.153,0.644,4.163
+R05X,ephedrine hydrochloride,"acetaminophen, anhydrous caffeine",0.145,1.0,2.533
+R05X,ephedrine hydrochloride,anhydrous caffeine,0.145,1.0,2.518
+R05X,"acetaminophen, ephedrine hydrochloride",anhydrous caffeine,0.145,1.0,2.518
+R05X,"dl-methylephedrine hydrochloride, pseudoephedrine hydrochloride",dextromethorphan hydrobromide hydrate,0.143,0.782,1.902
+R05X,"guaifenesin, pseudoephedrine hydrochloride",dextromethorphan hydrobromide hydrate,0.15,0.771,1.875
+M02A,phellodendron bark soft extract (3.3→1),"l-menthol, tocopherol acetate",0.104,0.913,5.346
+M02A,"l-menthol, tocopherol acetate",phellodendron bark soft extract (3.3→1),0.104,0.609,5.346
+M02A,tocopherol acetate,phellodendron bark soft extract (3.3→1),0.106,0.606,5.319
+M02A,phellodendron bark soft extract (3.3→1),tocopherol acetate,0.106,0.935,5.319
+M02A,"l-menthol, phellodendron bark soft extract (3.3→1)",tocopherol acetate,0.104,0.933,5.311
+A02A,"lipase, sodium bicarbonate",trimebutine maleate,0.102,1.0,9.44
+A02A,lipase,"magnesium aluminometasilicate, trimebutine maleate",0.102,1.0,9.44
+A02A,"precipitated calcium carbonate, scopolia extract",trimebutine maleate,0.106,1.0,9.44
+A02A,lipase,"glycyrrhiza powder, scopolia extract",0.102,1.0,9.44
+A02A,lipase,trimebutine maleate,0.102,1.0,9.44
+D01A,lidocaine,terbinafine hydrochloride,0.115,0.743,1.646
+S01X,sodium chloride,potassium chloride,0.156,0.844,5.406
+S01X,potassium chloride,sodium chloride,0.156,1.0,5.406
+A09A,cinnamon bark,citrus unshiu peel,0.101,0.8,6.695
+A09A,citrus unshiu peel,cinnamon bark,0.101,0.842,6.695
+A09A,diastase·protease·cellulase,"lipase, ursodeoxycholic acid",0.107,0.773,5.342
+A09A,"lipase, ursodeoxycholic acid",diastase·protease·cellulase,0.107,0.739,5.342
+A09A,"diastase·protease·cellulase, ursodeoxycholic acid",lipase,0.107,0.944,5.178
+A01A,"ascorbic acid coated, lysozyme hydrochloride",tocopherol acetate powder 50%,0.121,0.944,2.421
+A01A,lysozyme hydrochloride,"carbazochrome, tocopherol acetate powder 50%",0.362,0.85,2.35
+A01A,"carbazochrome, tocopherol acetate powder 50%",lysozyme hydrochloride,0.362,1.0,2.35
+A01A,"ascorbic acid, tocopherol acetate powder 50%",lysozyme hydrochloride,0.227,1.0,2.35
+A01A,tocopherol acetate powder 50%,"carbazochrome, lysozyme hydrochloride",0.362,0.927,2.335
+A06A,"aloe extract, ursodeoxycholic acid",magnesium hydroxide,0.151,0.955,3.791
+A06A,magnesium hydroxide,"aloe extract, ursodeoxycholic acid",0.151,0.6,3.791
+A06A,"magnesium hydroxide, ursodeoxycholic acid",aloe extract,0.151,0.618,3.733
+A06A,aloe extract,"magnesium hydroxide, ursodeoxycholic acid",0.151,0.913,3.733
+A06A,aloe extract,magnesium hydroxide,0.151,0.913,3.626
+D11A,"calcium pantothenate, medicinal yeast",p-aminobenzoic acid,0.212,1.0,4.714
+D11A,"keratin, p-aminobenzoic acid",l-cystine,0.212,1.0,4.714
+D11A,medicinal yeast,"keratin, p-aminobenzoic acid",0.212,1.0,4.714
+D11A,p-aminobenzoic acid,"keratin, medicinal yeast",0.212,1.0,4.714
+D11A,"keratin, medicinal yeast",p-aminobenzoic acid,0.212,1.0,4.714
+A11E,ubidecarenone,"gamma-oryzanol, zinc oxide",0.112,0.737,4.605
+A11E,"gamma-oryzanol, zinc oxide",ubidecarenone,0.112,0.7,4.605
+A11E,ubidecarenone,"benfotiamine, gamma-oryzanol",0.128,0.842,4.386
+A11E,"benfotiamine, gamma-oryzanol",ubidecarenone,0.128,0.667,4.386
+A11E,ubidecarenone,"folic acid, gamma-oryzanol",0.128,0.842,4.211
+A03A,dicyclomine hydrochloride,papaverine hydrochloride,0.114,0.867,7.6
+A03A,papaverine hydrochloride,dicyclomine hydrochloride,0.114,1.0,7.6
+A12A,"calcium gluconate hydrate, cholecalciferol concentrate oil",dibasic calcium phosphate hydrate,0.117,1.0,7.4
+A12A,dibasic calcium phosphate hydrate,"calcium gluconate hydrate, cholecalciferol concentrate oil",0.117,0.867,7.4
+A12A,cholecalciferol concentrate oil,"calcium gluconate hydrate, dibasic calcium phosphate hydrate",0.117,0.722,6.167
+A12A,"calcium gluconate hydrate, dibasic calcium phosphate hydrate",cholecalciferol concentrate oil,0.117,1.0,6.167
+A12A,"cholecalciferol concentrate oil, dibasic calcium phosphate hydrate",calcium gluconate hydrate,0.117,1.0,5.842
+A11A,"lecithin, thiamine nitrate",aloe extract,0.105,0.917,8.75
+A11A,"lecithin, potassium sulfate",aloe extract,0.105,0.917,8.75
+A11A,aloe extract,"lecithin, retinol acetate",0.105,1.0,8.75
+A11A,"lecithin, retinol acetate",aloe extract,0.105,0.917,8.75
+A11A,aloe extract,"lecithin, potassium sulfate",0.105,1.0,8.75
+A05B,"betaine, citric acid hydrate",betaine hydrochloride,0.192,1.0,5.2
+A05B,citric acid hydrate,"betaine, betaine hydrochloride",0.192,1.0,5.2
+A05B,"citric acid hydrate, l-arginine",betaine hydrochloride,0.192,1.0,5.2
+A05B,"betaine hydrochloride, l-arginine",citric acid hydrate,0.192,1.0,5.2
+A05B,citric acid hydrate,"betaine hydrochloride, l-arginine",0.192,1.0,5.2
+B03A,ferritin extract,"cyanocobalamin, folic acid",0.128,1.0,4.105
+B03A,ferritin extract,cyanocobalamin,0.128,1.0,3.9
+B03A,"ferritin extract, folic acid",cyanocobalamin,0.128,1.0,3.9
+B03A,"folic acid, polysaccharide iron complex",cyanocobalamin powder 0.1%,0.244,0.95,3.087
+B03A,cyanocobalamin powder 0.1%,"folic acid, polysaccharide iron complex",0.244,0.792,3.087
+A02B,magnesium hydroxide,"famotidine, precipitated calcium carbonate",0.118,1.0,8.444
+A02B,"famotidine, precipitated calcium carbonate",magnesium hydroxide,0.118,1.0,8.444
+A02B,precipitated calcium carbonate,"famotidine, magnesium hydroxide",0.118,0.692,5.846
+A02B,sodium bicarbonate,"calcium carbonate, sodium alginate",0.118,0.692,5.846
+A02B,sodium bicarbonate,calcium carbonate,0.118,0.692,5.846
+D06A,"bacitracin zinc, neomycin sulfate",pramoxine hydrochloride,0.137,0.714,4.345
+D06A,pramoxine hydrochloride,"bacitracin zinc, neomycin sulfate",0.137,0.833,4.345
+D06A,pramoxine hydrochloride,"bacitracin zinc, polymyxin b sulfate",0.137,0.833,4.056
+D06A,"bacitracin zinc, polymyxin b sulfate",pramoxine hydrochloride,0.137,0.667,4.056
+D06A,"polymyxin b sulfate, pramoxine hydrochloride",bacitracin zinc,0.137,0.909,3.904
+D07C,centella titrated extract,"hydrocortisone acetate, neomycin sulfate",0.119,1.0,7.444
+D07C,"hydrocortisone acetate, neomycin sulfate",centella titrated extract,0.119,0.889,7.444
+D07C,hydrocortisone acetate,centella titrated extract,0.119,0.8,6.7
+D07C,centella titrated extract,hydrocortisone acetate,0.119,1.0,6.7
+D07C,"centella titrated extract, neomycin sulfate",hydrocortisone acetate,0.119,1.0,6.7
+D04A,"diphenhydramine, dipotassium glycyrrhizinate",dexpanthenol,0.138,1.0,5.417
+D04A,"dipotassium glycyrrhizinate, tocopherol acetate",dexpanthenol,0.138,1.0,5.417
+D04A,dexpanthenol,"dipotassium glycyrrhizinate, tocopherol acetate",0.138,0.75,5.417
+D04A,"dexpanthenol, diphenhydramine",dipotassium glycyrrhizinate,0.138,1.0,5.417
+D04A,dexpanthenol,"diphenhydramine, dipotassium glycyrrhizinate",0.138,0.75,5.417
+A13A,"l-methionine, riboflavin",tocopherol calcium succinate,0.159,1.0,6.3
+A13A,tocopherol calcium succinate,"l-isoleucine, l-tryptophan",0.159,1.0,6.3
+A13A,"l-arginine hydrochloride, tocopherol calcium succinate",l-tryptophan,0.159,1.0,6.3
+A13A,l-tryptophan,"l-isoleucine, tocopherol calcium succinate",0.159,1.0,6.3
+A13A,"l-arginine hydrochloride, l-isoleucine",l-tryptophan,0.159,1.0,6.3
+R05F,carbinoxamine maleate,"noscapine, potassium guaiacolsulfonate",0.213,1.0,4.692
+R05F,"noscapine, potassium guaiacolsulfonate",carbinoxamine maleate,0.213,1.0,4.692
+R05F,carbinoxamine maleate,"dextromethorphan hydrobromide hydrate, noscapine",0.213,1.0,4.357
+R05F,"dextromethorphan hydrobromide hydrate, noscapine",carbinoxamine maleate,0.213,0.929,4.357
+R05F,carbinoxamine maleate,"dl-methylephedrine hydrochloride, noscapine",0.213,1.0,4.357
+R01B,phenylephrine hydrochloride,chlorpheniramine maleate,0.345,0.909,1.883
+R01B,chlorpheniramine maleate,phenylephrine hydrochloride,0.345,0.714,1.883
+R01B,triprolidine hydrochloride hydrate,pseudoephedrine hydrochloride,0.259,1.0,1.706
+R01B,triprolidine hydrochloride,pseudoephedrine hydrochloride,0.19,1.0,1.706
+S01G,"aminocaproic acid, naphazoline hydrochloride",neostigmine methylsulfate,0.25,1.0,4.0
+S01G,neostigmine methylsulfate,"aminocaproic acid, naphazoline hydrochloride",0.25,1.0,4.0
+S01G,"chlorpheniramine maleate, neostigmine methylsulfate",aminocaproic acid,0.214,1.0,4.0
+S01G,"naphazoline hydrochloride, neostigmine methylsulfate",aminocaproic acid,0.25,1.0,4.0
+S01G,"aminocaproic acid, chlorpheniramine maleate",neostigmine methylsulfate,0.214,1.0,4.0
+V06D,"calcium pantothenate, folic acid",tocopherol acetate powder 50%,0.111,1.0,9.0
+V06D,"l-tryptophan, tocopherol acetate powder 50%",folic acid,0.111,1.0,9.0
+V06D,folic acid,"l-valine, tocopherol acetate powder 50%",0.111,1.0,9.0
+V06D,tocopherol acetate powder 50%,"folic acid, l-valine",0.111,1.0,9.0
+V06D,"folic acid, l-valine",tocopherol acetate powder 50%,0.111,1.0,9.0
