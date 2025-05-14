@@ -1,8 +1,9 @@
 import pandas as pd
 
-### 원본 데이터 확인
+
+## 원본 데이터 확인
 # 1번 테이블 엑셀 파일 불러오기
-file_path = "Medicine/1_의약품등제품정보목록.xlsx"
+file_path = "raw_Medicine_data/1_의약품등제품정보목록.xlsx"
 medicine_info = pd.read_excel(file_path)
 
 # ATC 코드 컬럼 이름 확인 (필요하면 변경)
@@ -69,6 +70,7 @@ print("************************추출한 속성 데이터 프레임 확인******
 print(selected_medicine_info.head())
 print(selected_medicine_info.info())
 
+## 이상치&결측치 제거
 # cancel 변수가 "정상"이고 atc 값이 존재하는 sample 필터링
 filtered_medicine_info = selected_medicine_info[
     (selected_medicine_info["cancel"] == "정상") &
@@ -86,6 +88,6 @@ filtered_medicine_info["atc_3"] = filtered_medicine_info["atc"].str[:4] #3단계
 filtered_medicine_info["atc_4"] = filtered_medicine_info["atc"].str[:5] #4단계
 
 # 전처리 완료된 데이터 저장(CSV)
-filtered_medicine_info.to_csv("Medicine/filtered_medicine_info.csv", index=False)
+filtered_medicine_info.to_csv("raw_Medicine_data/filtered_medicine_info.csv", index=False)
 
 

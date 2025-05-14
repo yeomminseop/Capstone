@@ -1,15 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-import numpy as np
-from PIL import Image
-from mlxtend.preprocessing import TransactionEncoder
-from mlxtend.frequent_patterns import fpgrowth
 from wordcloud import WordCloud
-from mlxtend.frequent_patterns import association_rules
-import pickle, os
 
-# macOS용 한글 폰트 설정 (예: AppleGothic)
+# macOS용 한글 폰트 설정 (AppleGothic)
 mpl.rc('font', family='AppleGothic')
 plt.rcParams['axes.unicode_minus'] = False  # 마이너스 깨짐 방지
 
@@ -19,7 +13,7 @@ plt.rcParams['axes.unicode_minus'] = False  # 마이너스 깨짐 방지
 """
 
 # 데이터 불러오기
-file_path = 'Medicine/filtered_medicine_info.csv'
+file_path = 'raw_Medicine_data/filtered_medicine_info.csv'
 medicine_info = pd.read_csv(file_path)
 
 # atc_3 컬럼(앞 4자리)을 기준으로 그룹화
@@ -45,6 +39,7 @@ ATC 그룹별 주성분 빈도 시각화
 각 ATC 그룹에서 많이 사용되는 주성분들 확인
 """
 
+# 직접 실행될 때만 실행될 수 있도록 설정
 if __name__ == "__main__":
 
     # 그룹 내 OTC 수 상위 10개, 하위 10개 ATC 그룹 추출하여 시각화

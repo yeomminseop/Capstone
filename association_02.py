@@ -1,9 +1,9 @@
 from mlxtend.preprocessing import TransactionEncoder
 from mlxtend.frequent_patterns import fpgrowth, association_rules
 import pandas as pd
-from eda_visualization import selected_groups, atc_group_cutoff
+from eda_01 import selected_groups, atc_group_cutoff
 
-# 결과 저장 딕셔너리
+# 연관 규칙 적용 결과 저장 dictionary 설정
 fp_results = {}
 rules_results = {}
 single_rules_results = {}
@@ -27,7 +27,7 @@ for atc_code in selected_groups:
     all_ingredients = [i for sublist in transactions for i in sublist]
     top_50 = pd.Series(all_ingredients).value_counts().head(50).index.tolist()
 
-    # 원-핫 인코딩
+    # 원-핫 인코딩(주성분이 있으면 1, 없으면 0)
     te = TransactionEncoder()
     te_arr = te.fit(transactions).transform(transactions)
     df = pd.DataFrame(te_arr, columns=te.columns_)[top_50]
@@ -68,10 +68,10 @@ for atc_code in selected_groups:
 # 결과 저장용 리스트
 summary_rows = []
 
-# 기준값
-min_support = 0.1
-min_confidence = 0.6
-min_lift = 1.5
+# 기준값(하이퍼파라미터 조정할 것)
+min_support = 0.1 #최소 지지도
+min_confidence = 0.6 #최소 신뢰도
+min_lift = 1.5 #최소 향상도
 top_n = 5  # 각 그룹당 상위 5개 rule 추출
 
 for atc_code in selected_groups:
@@ -82,7 +82,7 @@ for atc_code in selected_groups:
     if rules_df.empty:
         continue
 
-    # 필터링된 규칙 추출
+    # 필터링된 연관 규칙 추출
     filtered = rules_df[
         (rules_df['support'] >= min_support) &
         (rules_df['confidence'] >= min_confidence) &
@@ -111,5 +111,5 @@ for atc_code in selected_groups:
 rules_summary_df = pd.DataFrame(summary_rows)
 print(rules_summary_df.head(20))  # 앞부분 미리보기
 
-# 결과 저장
+# 연관 규칙 결과 저장
 rules_summary_df.to_csv("atc_rule_summary.csv", index=False)

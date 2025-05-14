@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 1. 데이터 불러오기
-file_path = "Medicine/filtered_medicine_info.csv"  # 파일 경로 맞게 수정
+file_path = "raw_Medicine_data/filtered_medicine_info.csv"  # 파일 경로 맞게 수정
 medicine_df = pd.read_csv(file_path)
 
 # 2. ATC_3 코드 → 내부 효능 카테고리 매핑
