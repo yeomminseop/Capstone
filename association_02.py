@@ -94,7 +94,8 @@ for atc_code in selected_groups:
         continue
 
     # lift 기준 정렬 → 상위 N개 추출
-    top_rules = filtered.sort_values(by='lift', ascending=False).head(top_n)
+    # top_rules = filtered.sort_values(by='lift', ascending=False).head(top_n)
+    top_rules = filtered.sort_values(by='lift', ascending=False)
 
     # 결과 정리
     for _, row in top_rules.iterrows():

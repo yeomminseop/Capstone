@@ -195,7 +195,7 @@ atc_groups = df["ATC 그룹"].unique()
 
 # 각 ATC 그룹별로 Chord Diagram 생성
 for target_atc in atc_groups:
-    sub_df = df[df["ATC 그룹"] == target_atc].sort_values(by="lift", ascending=False).head(20)
+    sub_df = df[df["ATC 그룹"] == target_atc].sort_values(by="lift", ascending=False).head(5)
 
     if sub_df.empty:
         continue
@@ -225,7 +225,10 @@ for target_atc in atc_groups:
         "lift": "mean", # lift는 평균값으로 대체
         "rule_count": "sum" # 관여된 규칙 수 합산
     })
-    edge_df["value"] = edge_df["lift"]  # edge 굵기용
+    min_lift = edge_df["lift"].min()
+    max_lift = edge_df["lift"].max()
+    edge_df["value"] = 1 + 5 * (edge_df["lift"] - min_lift) / (max_lift - min_lift)
+
 
     # 색상 매핑
     palette = Category20[20]
@@ -239,7 +242,7 @@ for target_atc in atc_groups:
             edge_color=hv.dim('source').categorize(color_map),
             cmap='Category20',
             edge_cmap='Category20',
-            edge_line_width=hv.dim('value') * 3,
+            edge_line_width=hv.dim('value') * 2,
             edge_alpha=0.7,
             node_size=15,
             width=800,
